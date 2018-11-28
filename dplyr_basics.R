@@ -32,3 +32,4 @@ x <- rnorm(1e2)
 x[between(x, -1, 1)]
 
 # Arrange rows with arrange()
+# Learn more on https://r4ds.had.co.nz
