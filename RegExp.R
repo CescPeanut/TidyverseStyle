@@ -15,7 +15,8 @@ x <- c("apple", "banana", "pear")
 # \s: matches any whitespace (e.g. space, tab, newline).
 # [abc]: matches a, b, or c.
 # [^abc]: matches anything except a, b, or c.
-str_view(c("grey", "gray"), "gr(e|a)y")
 
-df <- data.frame(x=c(1,2,3), y=c('a','s','d'),
-                 stringsAsFactors = F)
+# 调整正则表达式regex()的表示形式，检查结果的差异
+str_view(c("grey", "gray"), regex("gr(e|a)y"))
+str_view(c("211ab3c", "asd", "cc258c", "1a"), "[1-9]*")
+
