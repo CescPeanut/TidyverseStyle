@@ -23,3 +23,9 @@ delays <- flights %>%
 # Explain: x %>% f(y) turns into f(x, y), and x %>% f(y) %>% g(z) turns 
 # into g(f(x, y), z) and so on.
 
+
+
+# Example1
+popular_dests <- flights %>% 
+  group_by(dest) %>% 
+  filter(n() > 365)
